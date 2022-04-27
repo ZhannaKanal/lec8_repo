@@ -1,0 +1,18 @@
+{% load poll_extras %}
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    Khat satti zhiberildi
+    5example {%show_categories '-title' cat_selected%}
+    4example {%getcats filter=2%}
+    3example {% show_categories %} 
+    2example {% getcats as categories2 %}
+    {% for i in categories2%}
+        <h4>{{i.content}}</h4>
+    {%endfor%} 
+</body>
+</html>
